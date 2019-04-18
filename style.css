@@ -1,0 +1,62 @@
+.btn {
+    background: #e34444;
+    width: 140px;
+    height: 60px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px 0px;
+}
+
+.btn span.title {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    transition: all .3s ease .3s;
+}
+
+.btn span.desc {
+    color: antiquewhite;
+    font-size: 12px;
+    position: absolute;
+    bottom: 3px;
+    right: -50%;
+    transition: all .3s ease .3s;
+}
+
+.btn:hover {
+    background: #e55959;
+}
+
+.btn:hover span.title {
+    top: 10px;
+    transition: all .3s ease .3s;
+}
+
+.btn:hover span.desc {
+    right: 20px;
+    transition: all .3s ease .3s;
+}
+
+.btn img {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 5px;
+    transition: all .3s ease;
+}
+
+btn img.over {
+    z-index: 99;
+    opacity: 0,25;
+    transition: all .3s ease;
+}
+
+.btn:hover img.over {
+    transform: scale(5) rotate(350deg);
+    opacity: 0;
+}
